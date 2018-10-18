@@ -1,0 +1,11 @@
+password = "changeme"
+InputConunter = 0
+UserInput = str(input("Please enter your password \n"))
+while UserInput =! password
+  if UserInput = password: 
+   print("Accepted)
+    print("Number of attempt: " + InputCounter)
+  else:
+    print("Try again")
+    UserInput = Userinput + 1
+  
