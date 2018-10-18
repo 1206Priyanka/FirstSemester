@@ -1,13 +1,13 @@
 password = "changeme"
-AttemptCounter= 0
+AttemptCounter= 1
 
-UserInput=input("Please type your password")
+UserInput=input("Please type your password\n")
 
 while UserInput != password:
-        UserInput=input("Try again")
+        UserInput=input("Try again\n")
         
         AttemptCounter = AttemptCounter+1
 
 if UserInput == password:
         print("Accepted")
-        print("number of attempts = " + AttemptCounter)    
+        print("number of attempts = " + str(AttemptCounter))    
