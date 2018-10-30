@@ -1,0 +1,10 @@
+#Varibale FirstSentence set to the first user input.
+FirstSentence = input("Please type in the first sentence\n")
+
+#Varibale SecondSentence set to the second user input.
+SecondSentence = input("Please type in the second sentence\n")
+
+#New variable set to the two sentences added together.
+TogetherSentence = (FirstSentence+" " + SecondSentence)
+
+print(TogetherSentence)
