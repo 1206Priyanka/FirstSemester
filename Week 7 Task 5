@@ -1,9 +1,25 @@
+#This creates an empty list called ShoppingList
+
 ShoppingList = []
 
+#The variable Userinput is declared and set as whatever the user inputs.
 Userinput = input("What do you need?\n")
+
+"""Start of the while statement.
+It loops until the user presses the enter button without inputting anything else."""
+
 while Userinput != "":
     ShoppingList.append(Userinput)
+
+    #The input of the user is then added the the end of the ShoppingList list.
+
+
+    """This prompts the user for another input.
+    The variable Userinput is set as that string."""
     Userinput = input("What do you need?\n")
+
 else:
     print(ShoppingList)
-    
+
+"""if the condition for the while loop is
+not reached then the content of the ShoppingList list is printed."""
