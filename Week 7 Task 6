@@ -8,3 +8,17 @@ SecondSentence = input("Please type in the second sentence\n")
 TogetherSentence = (FirstSentence+" " + SecondSentence)
 
 print(TogetherSentence)
+
+
+
+#A new list called WordsinSentences is declared.
+WordsinSentences = []
+
+#The words from the two sentences added together are split up.
+Words = TogetherSentence.split()
+
+#Each word from the sentence is added to the end of the WordsinSentences list.
+WordsinSentences.append(Words)
+
+print(WordsinSentences)
+
