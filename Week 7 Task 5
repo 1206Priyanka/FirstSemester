@@ -1,0 +1,9 @@
+ShoppingList = []
+
+Userinput = input("What do you need?\n")
+while Userinput != "":
+    ShoppingList.append(Userinput)
+    Userinput = input("What do you need?\n")
+else:
+    print(ShoppingList)
+    
