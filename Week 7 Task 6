@@ -22,3 +22,6 @@ WordsinSentences.append(Words)
 
 print(WordsinSentences)
 
+WordsinSentences.sort()
+
+print(WordsinSentences)
