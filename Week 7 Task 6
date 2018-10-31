@@ -1,27 +1,24 @@
 #Varibale FirstSentence set to the first user input.
-FirstSentence = input("Please type in the first sentence\n")
+FirstSentence = str(input("Please type in the first sentence\n"))
 
 #Varibale SecondSentence set to the second user input.
-SecondSentence = input("Please type in the second sentence\n")
+SecondSentence = str(input("Please type in the second sentence\n"))
 
 #New variable set to the two sentences added together.
-TogetherSentence = (FirstSentence+" " + SecondSentence)
+ThirdSentence = str(FirstSentence + " " + SecondSentence)
 
-print(TogetherSentence)
+print(ThirdSentence)
 
+"""The words from the two sentences added together are split up and added
+added to the end of the Wordslist."""
+Words =ThirdSentence.split()
 
+print(Words)
 
-#A new list called WordsinSentences is declared.
-WordsinSentences = []
+#This function sorts the Words list alphabetically.
+Words.sort()
 
-#The words from the two sentences added together are split up.
-Words = TogetherSentence.split()
+print(Words)
 
-#Each word from the sentence is added to the end of the WordsinSentences list.
-WordsinSentences.append(Words)
-
-print(WordsinSentences)
-
-WordsinSentences.sort()
 
 print(WordsinSentences)
