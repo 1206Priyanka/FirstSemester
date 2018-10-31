@@ -20,5 +20,14 @@ Words.sort()
 
 print(Words)
 
+#The len function counts the length of the list Words.
+print (len(Words))
 
-print(WordsinSentences)
+#Collections is imported from the library.
+import collections
+
+#This looks at the words in the Sentence and counts how many times it appears.s
+WordDictionary = collections.Counter(ThirdSentence.split())
+
+print(WordDictionary)
+
