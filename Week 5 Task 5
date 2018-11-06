@@ -6,7 +6,7 @@ number = int(input("Enter an integer\n"))
 remainder = number%7
 
 #This operation calculates the number of times 7 fits into the inputted number.
-factor = number/7
+factor = int(number/7)
 
 #This line prints the value of the remainder by converting the datatype to a str.
 print("The remainder is " + str(number))
