@@ -15,3 +15,12 @@ average = sum(Numbers)/len(Numbers)
 
 #This will print the new value of the average.
 print (average)
+
+#This line removes the value 112 from the list
+Numbers.remove(112)
+
+#After a value has been removed a new value of the average is calculated.
+average = sum(Numbers)/len(Numbers)
+
+#This will print the new value of the average.
+print (average)
