@@ -1,0 +1,22 @@
+x= 0
+y=0
+numbers = []
+powers = []
+
+while x < 5:
+    x = x+1
+    numbers.append(x)
+
+
+
+while y< 5: 
+    y =y+1
+    for num in numbers:
+        PowerNumbers = num **y
+        powers.append(PowerNumbers)
+
+print(numbers)
+print(powers)
+    
+        
+        
