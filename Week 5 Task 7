@@ -1,0 +1,6 @@
+#Defining the variable ScoreA and ScoreB
+scoreA = 1
+scoreB = 1
+
+if scoreA == scoreB:
+    print("tie")
