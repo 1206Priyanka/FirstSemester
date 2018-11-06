@@ -1,0 +1,17 @@
+#Defining the variables x and y to their values.
+x = 2
+y = 9
+
+#The import function is used to import the sqrt operator from the math  library.
+from math import sqrt
+
+
+"""if statement that is executed if 1+x is greater than x to the power of square
+root of 2"""
+if 1+x > x**(sqrt(2)):
+
+
+#If the condition is met then the value of y becomes y+x
+    y=y+x
+print (y)
+
