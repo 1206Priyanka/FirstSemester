@@ -3,7 +3,15 @@ then it is converted to an integer datatype."""
 number = int(input("Enter an integer\n"))
 
 #This calculates the remainder when the int enterd by the user is divided by 7.
-number = number%7
+remainder = number%7
+
+#This operation calculates the number of times 7 fits into the inputted number.
+factor = number/7
 
 #This line prints the value of the remainder by converting the datatype to a str.
 print("The remainder is " + str(number))
+
+"""This line prints the number of times 7 fits into the number and converts the
+datatype of the factor to string."""
+print ("The number 7 fits into your number " +str(factor)+ " times")
+
