@@ -7,6 +7,11 @@ average = sum(Numbers)/len(Numbers)
 
 print(average)
 
+#This line of code is added the value of 24 to the list.
+Numbers.append(24)
 
+#Since 24 is added to the list the new average has to be calculated.
+average = sum(Numbers)/len(Numbers)
 
-
+#This will print the new value of the average.
+print (average)
