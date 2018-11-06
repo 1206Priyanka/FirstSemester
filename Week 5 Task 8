@@ -1,0 +1,9 @@
+#Setting the variable UserInput to the what ever the user inputs.
+UserInput = input("Enter Y to quit\n")
+
+#An if statement which is executed if the user had inputted "Y"
+if UserInput == str("Y"):
+
+    #If condition is met "Goodbye" is displayed on the screen.
+    print ("Goodbye")
+    
