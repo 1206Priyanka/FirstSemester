@@ -13,9 +13,6 @@ while basenumber < 5:
         else:
             data[basenumber].append(result)
 
-print(data)
-
-
 for row in zip(*([key] + (value) for key, value in sorted(data.items()))):
     print(*row)
 
