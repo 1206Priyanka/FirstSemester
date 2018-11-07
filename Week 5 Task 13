@@ -1,7 +1,9 @@
-basenumber = 0
+basenumbers = []
 data = {}
+basenumber = 0
 while basenumber < 5:
     basenumber = basenumber+1
+    basenumbers.append(basenumber)
     exponent = 0
     while exponent < 5:
         exponent = exponent+1
@@ -12,5 +14,9 @@ while basenumber < 5:
             data[basenumber].append(result)
 
 print(data)
+
+
+for row in zip(*([key] + (value) for key, value in sorted(data.items()))):
+    print(*row)
 
         
