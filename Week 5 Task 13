@@ -1,19 +1,38 @@
+#Declaring a list called basenumbers.
 basenumbers = []
+
+#Declaring a dictonary called data.
 data = {}
+
+#base number is set to 0
 basenumber = 0
+
+""" While loop that is repeated until basenumber is 5 or higher.
+    Basenumber is reassigned and appended to the list.
+    Expoenent is set to 0."""
 while basenumber < 5:
     basenumber = basenumber+1
     basenumbers.append(basenumber)
     exponent = 0
+
+    """ Another while statement that is embeded within the other one.
+    It is repeated until the value of the exponent varible is 5 or higher.
+    the variable result is set as basenumber to the power of the exponent."""
     while exponent < 5:
         exponent = exponent+1
         result = basenumber**exponent
+
+        """ If statement that adds basenumber as a key to the dictonary if
+            it isn't already there and an else statement that appends the result
+            into the basenumber key in the data dictonary."""
         if basenumber not in data:  
             data[basenumber] = [result]
         else:
             data[basenumber].append(result)
 
-for row in zip(*([key] + (value) for key, value in sorted(data.items()))):
-    print(*row)
+            #This creates a table like format when printing the dictonary
+
+for table in zip(*([key] + (value) for key, value in sorted(data.items()))):
+    print(*table)
 
         
