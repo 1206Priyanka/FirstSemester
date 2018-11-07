@@ -1,22 +1,16 @@
-x= 0
-y=0
-numbers = []
-powers = []
+basenumber = 0
+data = {}
+while basenumber < 5:
+    basenumber = basenumber+1
+    exponent = 0
+    while exponent < 5:
+        exponent = exponent+1
+        result = basenumber**exponent
+        if basenumber not in data:  
+            data[basenumber] = [result]
+        else:
+            data[basenumber].append(result)
 
-while x < 5:
-    x = x+1
-    numbers.append(x)
+print(data)
 
-
-
-while y< 5: 
-    y =y+1
-    for num in numbers:
-        PowerNumbers = num **y
-        powers.append(PowerNumbers)
-
-print(numbers)
-print(powers)
-    
-        
         
