@@ -1,0 +1,19 @@
+#defining the main in which the value of n is set to 4.
+#Then the value that is returned from the mystery function is printed. 
+def main():
+    print(mystery(4))
+
+
+def mystery(n):  
+
+    if n <= 0: 
+
+         return 0  
+
+    else:  
+
+        return n + mystery(n - 1)
+
+#This runs the main function
+
+main()
