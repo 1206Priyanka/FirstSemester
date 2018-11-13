@@ -1,0 +1,12 @@
+def main():
+    userInput = input("Enter something\n")
+    print(count_spaces(userInput))
+
+def count_spaces(userInput):
+    spaces = 0  
+    for char in userInput : 
+        if char == " ":  
+            spaces = spaces + 1
+    return spaces
+    
+main()
