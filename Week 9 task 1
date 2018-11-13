@@ -1,0 +1,18 @@
+# The main body of the program
+def main():
+    #defininf x as 2 and y as 3
+    x=2
+    y=3
+    print(mystery(x,y))
+
+
+
+
+def mystery(x, y):  
+
+    result = (x + y) / (y - x)  
+
+    return result
+
+#The function main is peformed.
+main()
