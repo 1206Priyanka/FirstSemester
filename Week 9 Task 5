@@ -1,6 +1,11 @@
+# defining the main where the program asks for an input from the user.
+# Then prints out the value of spaces
+
 def main():
     userInput = input("Enter something\n")
     print(count_spaces(userInput))
+
+#function called count_spaces where the number of spaces is calculated.
 
 def count_spaces(userInput):
     spaces = 0  
