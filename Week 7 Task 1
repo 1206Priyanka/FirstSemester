@@ -1,10 +1,12 @@
+# x is defiined as 0. 
 x = 0
 pi = 0
 num = 1
 
-while(abs(num - pi
-          ) > 0.0001):
+#While loop that is repeated until 1- pi is less than 0.0001
+while(abs(num - pi) > 0.0001):
     num = pi
+    #Operation that calculated a digit of the pi.
     pi = pi+(((-1) **x * 4)/ (2*x+1))
 
     x+=1
