@@ -1,3 +1,7 @@
+#The loop is repeated 5 times to calculate the powers of the first 5 numbers
 for x in range (6):
-    print("%6d %6d %6d %6d %6d %6d %6d" %(x, x**0, x**1, x**2, x**3, x**4, x**5))
 
+    """This line formats the results in a table like format and calculates
+    the powers."""
+    print("%6d %6d %6d %6d %6d %6d %6d" %(x, x**0, x**1, x**2, x**3, x**4,
+                                          x**5))
