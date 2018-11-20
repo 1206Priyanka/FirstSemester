@@ -1,0 +1,16 @@
+page = int(input("What is the page number?\n"))
+
+
+    
+def main():
+    if Even(page):
+        print(page)
+    else:
+        print("%60s%d" % (" ", page))
+
+
+def Even(page):
+    if page % 2 ==0:
+        return(page)        
+
+main()
