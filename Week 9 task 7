@@ -1,12 +1,15 @@
+#Defining the mystery function which is used in the main function.
+def mystery (n):
+    if n <= 0:
+        return 0
+    else :
+        return mystery(n//2) +1
+
+    
+""" Defining the main function which prints the
+answer for mystery with the n value of 20 """
 def main():
-    print(mystery(20))
+    print(mystery(20)) 
 
-
-def mystery(n):
-    if n <= 0:  
-        return 0  
-    else:  
-
-        return mystery(n//2) + 1 
-
+#The execution of the main function.
 main()
