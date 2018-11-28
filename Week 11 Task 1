@@ -1,0 +1,7 @@
+class Person():
+    def __init__(self, firstName):      #Constructor
+        self.name = firstName           #Instance Variable.
+
+harry = Person("Harry")
+print(harry.name)
+
