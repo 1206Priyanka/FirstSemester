@@ -43,14 +43,15 @@ def main():
     register1.addItem(0.95)
     register2 = CashRegister()
     register2.addItem(1.90)
-    print(register1.itemCount)
-    print(register1.totalPrice)
-    print(register2.itemCount)
-    print(register2.totalPrice)
+    print("Registry 1 Item Count: ",register1.itemCount)
+    print("Registry 1 Total Price: ",register1.totalPrice)
+    print("Registry 2 Item Count: ",register2.itemCount)
+    print("Registry 2 Total Price: ",register2.totalPrice)
 
     """Prints the value of the totalPrice for each register in pounds
     with no pence."""
-    print(register1.pound)
-    print(register2.pound)
+    print("Register 1 Sales in Pound: ", register1.pound)
+    print("Register 2 Sales in Pound: ",register2.pound)
 
 main()
+
