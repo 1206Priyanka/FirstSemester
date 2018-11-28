@@ -1,0 +1,31 @@
+class CashRegister :
+
+"""This function is the constructur, it returns the CashRegister object item
+count (itemCount) to 0and the total price (totalPrice) to 0.0"""
+    def __init__(self) :
+        self.itemCount = 0
+        self.totalPrice = 0.0
+
+    """ The addItem function is the method and it increases the itemCount by 1
+    and the value of totalPrice by the value of price"""
+    def addItem(self, price) :
+        self.itemCount = self.itemCount + 1
+        self.totalPrice = self.totalPrice + price
+
+    """The getTotal function returns the value of totalPrice.
+    This is also the method"""
+    def getTotal(self) :
+        return self.totalPrice
+
+    """The getCount function returns the value of itemCount.
+    This is another method."""
+    def getCount(self) :
+        return self.itemCount
+
+    
+    """The clear function resets the values of itemCount and totalPrice to 0.
+    This is the final method"""
+    def clear(self) :
+        self.itemCount = 0
+        self.totalPrice = 0.0
+
