@@ -1,7 +1,6 @@
 class CashRegister :
-
-"""This function is the constructur, it returns the CashRegister object item
-count (itemCount) to 0and the total price (totalPrice) to 0.0"""
+    """This function is the constructur, it returns the CashRegister object item
+    count (itemCount) to 0and the total price (totalPrice) to 0.0"""
     def __init__(self) :
         self.itemCount = 0
         self.totalPrice = 0.0
@@ -22,10 +21,22 @@ count (itemCount) to 0and the total price (totalPrice) to 0.0"""
     def getCount(self) :
         return self.itemCount
 
-    
     """The clear function resets the values of itemCount and totalPrice to 0.
     This is the final method"""
     def clear(self) :
         self.itemCount = 0
         self.totalPrice = 0.0
+"""Defying the main function in which the objets and their data is added to the
+class"""
+def main():
+    register1 = CashRegister()
+    register1.addItem(0.90)
+    register1.addItem(0.95)
+    register2 = CashRegister()
+    register2.addItem(1.90)
+    print(register1.itemCount)
+    print(register1.totalPrice)
+    print(register2.itemCount)
+    print(register2.totalPrice)
 
+main()
