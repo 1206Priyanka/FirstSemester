@@ -4,13 +4,15 @@ class CashRegister :
     def __init__(self) :
         self.itemCount = 0
         self.totalPrice = 0.0
+        self.pound = 0
 
     """ The addItem function is the method and it increases the itemCount by 1
-    and the value of totalPrice by the value of price"""
+    and the value of totalPrice by the value of price. It also sets the value
+    of the getPound to the integer value of the totalPrice"""
     def addItem(self, price) :
         self.itemCount = self.itemCount + 1
         self.totalPrice = self.totalPrice + price
-
+        self.pound = int(self.totalPrice)
     """The getTotal function returns the value of totalPrice.
     This is also the method"""
     def getTotal(self) :
@@ -21,6 +23,11 @@ class CashRegister :
     def getCount(self) :
         return self.itemCount
 
+    """The getPound method returns the integer value of the totalPrice to
+    give you the value of total sales in pounds without the pence."""
+    def getPound(self):
+        return pound
+
     """The clear function resets the values of itemCount and totalPrice to 0.
     This is the final method"""
     def clear(self) :
@@ -29,6 +36,8 @@ class CashRegister :
 """Defying the main function in which the objets and their data is added to the
 class"""
 def main():
+
+    #prints the value of the totalCount and totalPrice for each register.
     register1 = CashRegister()
     register1.addItem(0.90)
     register1.addItem(0.95)
@@ -38,5 +47,10 @@ def main():
     print(register1.totalPrice)
     print(register2.itemCount)
     print(register2.totalPrice)
+
+    """Prints the value of the totalPrice for each register in pounds
+    with no pence."""
+    print(register1.pound)
+    print(register2.pound)
 
 main()
