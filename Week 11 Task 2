@@ -1,0 +1,10 @@
+class Person():                             #Class called Person created
+    def __init__(self, name) :              #Construtor of the objects
+        self.name = name                    #Instance variable
+
+p = Person("unknown")
+
+print(p.name)
+        
+ 
+ 
