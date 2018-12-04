@@ -1,22 +1,22 @@
 class CashRegister :
     """This function is the constructur, it returns the CashRegister object item
-    count (itemCount) to 0 and the total price (totalPrice) to 0.0. It also
-    sets the value of payment to the user input and converts it to float."""
+    count (itemCount) to 0and the total price (totalPrice) to 0.0"""
     def __init__(self) :
-        self.payment = float(input("Cash Tendered: "))
         self.itemCount = 0
         self.totalPrice = 0.0
         self.pound = 0
+        self.payment = int(input("Payment: "))
+        
 
     """ The addItem function is the method and it increases the itemCount by 1
     and the value of totalPrice by the value of price. It also sets the value
-    of the getPound to the integer value of the totalPrice. The
-    change is calculated and converted to a float."""
+    of the getPound to the integer value of the totalPrice"""
     def addItem(self, price) :
-        self.itemCount = int(self.itemCount + 1)
-        self.totalPrice = float(self.totalPrice + price)
+        self.itemCount = self.itemCount + 1
+        self.totalPrice = self.totalPrice + price
         self.pound = int(self.totalPrice)
-        self.change = float(self.payment - self.totalPrice)
+        self.change = self.payment-self.totalPrice
+                           
     """The getTotal function returns the value of totalPrice.
     This is also the method"""
     def getTotal(self) :
@@ -24,7 +24,7 @@ class CashRegister :
 
     """The getCount function returns the value of itemCount.
     This is another method."""
-    def getCount(self) :
+    def getCount(self):
         return self.itemCount
 
     """The getPound method returns the integer value of the totalPrice to
@@ -32,17 +32,18 @@ class CashRegister :
     def getPound(self):
         return pound
 
-       
+    def getChange(self, payment):
+        return change
+
     """The clear function resets the values of itemCount and totalPrice to 0.
     This is the final method"""
     def clear(self) :
         self.itemCount = 0
         self.totalPrice = 0.0
-
-        
 """Defying the main function in which the objets and their data is added to the
 class"""
 def main():
+
     #prints the value of the totalCount and totalPrice for each register.
     register1 = CashRegister()
     register1.addItem(0.90)
@@ -59,9 +60,10 @@ def main():
     print("Register 1 Sales in Pound: ", register1.pound)
     print("Register 2 Sales in Pound: ",register2.pound)
 
-    """The print functions print the change that is due in each register."""
     print(register1.change)
     print(register2.change)
+    
+
 main()
 
 
