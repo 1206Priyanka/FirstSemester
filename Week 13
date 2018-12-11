@@ -1,0 +1,24 @@
+class Shapes():
+    def __init__(self, area):
+        self.area = area
+
+def Circle(Shapes,r):
+    self.area = 3.14*r*r
+    return self.area
+
+def Rectangle(Shapes, Longside, Shortside):
+    self.area = Longside*Shortside
+    return self.area
+
+def Square(Shapes, side):
+    self.area = side*side
+    return self.area
+
+
+
+circle1 = Circle(1,1)
+Rectangle1 = Retangle(1,2)
+Square1 = Square(2)
+
+
+print(cirlce1.Circle())
