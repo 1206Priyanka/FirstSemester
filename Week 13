@@ -1,14 +1,18 @@
 class Shapes():
-    def __init__(self, area):
+    def __init__(self, name, area):
         self.area = area
+        self.name = name
 
+    def information(self):
+        print("Name: ", self.name, "Area: ", self.area)
 
 
 class rectangle(Shapes):
-    def __init__(self,area,side):
-        Shapes.__init__(self,area)
+    def __init__(self, name, area,side):
+        Shapes.__init__(self,name,area)
         self.side = side
         otherSide = area/side
-        print(otherSide)
 
-rectangle1 = rectangle(24,12)
+rectangle1 = rectangle("rectangle 1",24,12)
+
+rectangle1.information()
