@@ -1,18 +1,36 @@
 class Shapes():
     def __init__(self, name, area):
-        self.area = area
         self.name = name
+        self.area = area
 
-    def information(self):
-        print("Name: ", self.name, "Area: ", self.area)
-
-
-class rectangle(Shapes):
-    def __init__(self, name, area,side):
+    def showDetails(self):
+        print("Name: ",self.name)
+        print("Area; ",self.area)
+        
+    
+class Circle(Shapes):
+    def __init__(self, name, radius):
+        area = radius*radius*3.14
         Shapes.__init__(self,name,area)
-        self.side = side
-        otherSide = area/side
+        
+class Rectangle(Shapes):
+    def __init__(self, name, longside, shortside):
+        area = longside*shortside
+        Shapes.__init__(self,name,area)
+class Square (Shapes):
+    def __init__(self,name,side):
+        area = side*side
+        Shapes.__init__(self,name,area)
+class Ellipse (Shapes):
+    def __init__(self,name,radius1,radius2):
+        area = 3.14*radius1*radius2
+        Shapes.__init__(self,name,area)
 
-rectangle1 = rectangle("rectangle 1",24,12)
+Circle1 = Circle("Circle1",2)
+Circle2 = Circle("Circle2",3)
 
-rectangle1.information()
+
+Circle2.showDetails()
+
+    
+    
